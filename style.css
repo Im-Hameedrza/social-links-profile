@@ -1,0 +1,123 @@
+/* RESET */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #141414;
+  --color-secondary-dark: #1f1f1f;
+  --color-secondary-light: #333333;
+  --color-green: #c4f82a;
+}
+
+@font-face {
+  font-family: "inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "inter";
+  font-size: 1.4rem;
+}
+
+.main {
+  background-color: var(--color-primary);
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--container {
+  background-color: var(--color-secondary-dark);
+  width: 327px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+  border-radius: 12px;
+}
+
+.card__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+}
+
+.card--header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.card--header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.card--header span {
+  color: var(--color-green);
+  font-weight: 700;
+}
+
+.desceription {
+  font-weight: 400;
+}
+.card--btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.btn {
+  font-weight: 600;
+  background-color: var(--color-secondary-light);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-green);
+  color: var(--color-secondary-light);
+  transition-delay: 0s; /* فوری فعال شود */
+}
+
+@media screen and (min-width: 768px) {
+  .card--container {
+    width: 384px;
+    height: 611px;
+    padding: 4rem;
+  }
+}
