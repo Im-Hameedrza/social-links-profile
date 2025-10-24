@@ -106,6 +106,9 @@ body {
   border-radius: 12px;
   transition: all 0.2s ease-in-out;
   transition-delay: 0.2s;
+  outline: none;
+  border: none;
+  color: white;
 }
 
 .btn:hover {
@@ -121,3 +124,4 @@ body {
     padding: 4rem;
   }
 }
+
